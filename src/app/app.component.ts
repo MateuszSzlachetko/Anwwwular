@@ -10,5 +10,5 @@ import { AccessibilityMenuComponent } from './components/accessibility-menu/acce
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  title = 'Anwwwular';
+  title = ;
 }
