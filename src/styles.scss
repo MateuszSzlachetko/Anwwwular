@@ -4,6 +4,8 @@
   --primary: #155630;
   --secondary: #d8e4dd;
   --accent: #c20003;
+  --logo: invert(24%) sepia(6%) saturate(4927%) hue-rotate(92deg)
+    brightness(106%) contrast(94%);
 }
 
 .contrast-theme {
@@ -12,4 +14,29 @@
   --primary: #ffff00;
   --secondary: #ffffff;
   --accent: #ffff00;
+  --logo: invert(75%) sepia(72%) saturate(1563%) hue-rotate(13deg)
+    brightness(108%) contrast(100%);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100%;
+  background-color: var(--background);
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
 }
