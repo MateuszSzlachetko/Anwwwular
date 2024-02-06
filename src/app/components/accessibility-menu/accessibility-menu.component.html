@@ -1,0 +1,42 @@
+<div class="accessibility-menu">
+  <button
+    aria-label="Przycisk do pomniejszenia tekstu"
+    class="accessibility-menu__button"
+    (click)="decreaseFontSize()"
+  >
+    <img
+      class="accessibility-menu__icon"
+      ngSrc="assets/icons/text_decrease_icon.svg"
+      alt="ikona pomniejszenia tekstu"
+      height="24"
+      width="24"
+    />
+  </button>
+  <button
+    aria-label="Przycisk do powiększenia tekstu"
+    class="accessibility-menu__button"
+    (click)="increaseFontSize()"
+  >
+    <img
+      class="accessibility-menu__icon"
+      ngSrc="assets/icons/text_increase_icon.svg"
+      alt="ikona powiększenia tekstu"
+      height="24"
+      width="24"
+    />
+  </button>
+  <button
+    *ngIf="theme$ | async as theme"
+    aria-label="Przycisk do zmiany motywu"
+    class="accessibility-menu__button"
+    (click)="toggleTheme()"
+  >
+    <img
+      class="accessibility-menu__icon"
+      [ngSrc]="theme.iconPath"
+      alt="ikona motywu"
+      height="24"
+      width="24"
+    />
+  </button>
+</div>

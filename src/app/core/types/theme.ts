@@ -7,13 +7,13 @@ export type Theme = {
 const light: Theme = {
   name: 'light',
   className: 'light-theme',
-  iconPath: 'assets/light-theme-icon.svg',
+  iconPath: 'assets/icons/light-theme-icon.svg',
 };
 
 const contrast: Theme = {
   name: 'contrast',
   className: 'contrast-theme',
-  iconPath: 'assets/contrast-theme-icon.svg',
+  iconPath: 'assets/icons/contrast-theme-icon.svg',
 };
 
 export const themes = {
