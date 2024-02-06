@@ -1,5 +1,5 @@
 {
-  "name": "anwwwular",`project-name`
+  "name": "anwwwular",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:Anwwwular": "node dist/anwwwular/server/server.mjs"`project-name`
+    "serve:ssr:Anwwwular": "node dist/anwwwular/server/server.mjs"
   },
   "private": true,
   "dependencies": {
