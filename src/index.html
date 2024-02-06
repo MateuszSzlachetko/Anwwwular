@@ -1,13 +1,29 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Anwwwular</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
-<body>
-  <app-root></app-root>
-</body>
+  <head>
+    <script>
+      const THEME_PREFERENCE_LOCAL_STORAGE_KEY = 'themePreference';
+      const LIGHT_MODE_CLASS_NAME = 'light-theme';
+      const CONTRAST_MODE_CLASS_NAME = 'contrast-theme';
+
+      const theme =
+        localStorage.getItem(THEME_PREFERENCE_LOCAL_STORAGE_KEY) ?? 'auto';
+
+      window.document.documentElement.className = '';
+
+      if (theme === 'light' || theme === 'auto')
+        window.document.documentElement.className = LIGHT_MODE_CLASS_NAME;
+
+      if (theme === 'contrast')
+        window.document.documentElement.className = CONTRAST_MODE_CLASS_NAME;
+    </script>
+    <meta charset="utf-8" />
+    <title>Anwwwular</title>
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+  <body>
+    <app-root></app-root>
+  </body>
 </html>

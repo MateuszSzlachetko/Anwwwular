@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+.light-theme {
+  --text: #0f0f0f;
+  --background: #ffffff;
+  --primary: #155630;
+  --secondary: #d8e4dd;
+  --accent: #c20003;
+}
+
+.contrast-theme {
+  --text: #ffff00;
+  --background: #000000;
+  --primary: #ffff00;
+  --secondary: #ffffff;
+  --accent: #ffff00;
+}
